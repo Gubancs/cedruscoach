@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		01523FA72D628D43007A3D06 /* SwiftUISnackbar in Frameworks */ = {isa = PBXBuildFile; productRef = 01523FA62D628D43007A3D06 /* SwiftUISnackbar */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0194DF0E2D04BEE200F2F7D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		0194DF172D04BEE200F2F7D7 /* cedruscoachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cedruscoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		01F43F7F2D627496007D55DE /* Exceptions for "cedruscoach" folder in "cedruscoach" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0194DEFA2D04BEE100F2F7D7 /* cedruscoach */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0194DEFD2D04BEE100F2F7D7 /* cedruscoach */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				01F43F7F2D627496007D55DE /* Exceptions for "cedruscoach" folder in "cedruscoach" target */,
+			);
 			path = cedruscoach;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01523FA72D628D43007A3D06 /* SwiftUISnackbar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = cedruscoach;
 			packageProductDependencies = (
+				01523FA62D628D43007A3D06 /* SwiftUISnackbar */,
 			);
 			productName = cedruscoach;
 			productReference = 0194DEFB2D04BEE100F2F7D7 /* cedruscoach.app */;
@@ -195,6 +214,9 @@
 			);
 			mainGroup = 0194DEF22D04BEE100F2F7D7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				01523FA52D628D43007A3D06 /* XCRemoteSwiftPackageReference "SwiftUISnackbar" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0194DEFC2D04BEE100F2F7D7 /* Products */;
 			projectDirPath = "";
@@ -396,13 +418,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"cedruscoach/Preview Content\"";
+				DEVELOPMENT_TEAM = D4YAU264DC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cedruscoach/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CedrusCoach;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,13 +450,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"cedruscoach/Preview Content\"";
+				DEVELOPMENT_TEAM = D4YAU264DC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cedruscoach/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CedrusCoach;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01523FA52D628D43007A3D06 /* XCRemoteSwiftPackageReference "SwiftUISnackbar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zaniluca/SwiftUISnackbar";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01523FA62D628D43007A3D06 /* SwiftUISnackbar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01523FA52D628D43007A3D06 /* XCRemoteSwiftPackageReference "SwiftUISnackbar" */;
+			productName = SwiftUISnackbar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0194DEF32D04BEE100F2F7D7 /* Project object */;
 }
